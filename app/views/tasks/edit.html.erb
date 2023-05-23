@@ -1,0 +1,11 @@
+<h2> Type here what you want to edit! </h2>
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :false %>
+  <%= f.submit %>
+<% end %>
